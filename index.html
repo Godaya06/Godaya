@@ -1,16 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Godaya Tech</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godaya Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h2 {
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product-card p {
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .product-card span {
+            color: #ff6f61;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>Godaya Online Store</h1>
+        <p>Quality Hair, Skincare, Beauty, and Wears across Kenya</p>
+    </header>
 
-  <h1>Godaya Tech</h1>
-  <p>Smartphones. Smart Prices.</p>
+    <nav>
+        <a href="#hair">Hair Products</a>
+        <a href="#skincare">Skincare & Serums</a>
+        <a href="#beauty">Beauty Products</a>
+        <a href="#wears">Wears</a>
+    </nav>
 
-  <button>Browse Deals</button>
+    <div class="container">
+        <!-- Hair Products -->
+        <section class="category" id="hair">
+            <h2>Hair Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/hair1.jpg" alt="Hair Oil">
+                    <h3>Hair Oil</h3>
+                    <p>Promotes healthy hair growth</p>
+                    <span>KSh 1,200</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/hair2.jpg" alt="Shampoo">
+                    <h3>Shampoo</h3>
+                    <p>Nourishing & sulfate-free</p>
+                    <span>KSh 900</span>
+                </div>
+            </div>
+        </section>
 
+        <!-- Skincare & Serums -->
+        <section class="category" id="skincare">
+            <h2>Skincare & Serums</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/serum1.jpg" alt="Vitamin C Serum">
+                    <h3>Vitamin C Serum</h3>
+                    <p>Brightens skin naturally</p>
+                    <span>KSh 1,500</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/serum2.jpg" alt="Hyaluronic Acid">
+                    <h3>Hyaluronic Acid</h3>
+                    <p>Hydrates and smooths skin</p>
+                    <span>KSh 1,800</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beauty Products -->
+        <section class="category" id="beauty">
+            <h2>Beauty Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/makeup1.jpg" alt="Lipstick">
+                    <h3>Lipstick</h3>
+                    <p>Long-lasting & vibrant</p>
+                    <span>KSh 700</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/makeup2.jpg" alt="Foundation">
+                    <h3>Foundation</h3>
+                    <p>Perfect coverage for all skin tones</p>
+                    <span>KSh 1,000</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wears -->
+        <section class="category" id="wears">
+            <h2>Wears</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/shirt1.jpg" alt="Men's T-Shirt">
+                    <h3>Men's T-Shirt</h3>
+                    <p>Cotton, comfortable fit</p>
+                    <span>KSh 1,200</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/dress1.jpg" alt="Women's Dress">
+                    <h3>Women's Dress</h3>
+                    <p>Elegant and trendy</p>
+                    <span>KSh 2,000</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Godaya Online Store. All rights reserved.
+    </footer>
 </body>
 </html>
