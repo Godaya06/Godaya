@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Godaya Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Godaya Tech</h1>
+  <p>Smartphones. Smart Prices.</p>
+
+  <button>Browse Deals</button>
+
+</body>
+</html>
